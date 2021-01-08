@@ -1,109 +1,505 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Cv de Noémie Martin Développeuse fullstack</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mohammed Beressa - Le CV</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://kit.fontawesome.com/d52f97726b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/contact.js"></script>
 </head>
+<!-- Mon body-->
+
 <body>
-    <nav id="menu" class="primary-block">
-        <div>
-            <h2>Noémie MARTIN</h2>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#experience">Expériences</a></li>
-                <li><a href="#formations">Formations</a></li>
-            </ul>
-        </div>
-    </nav>
-    <header class="secondary-block">
-        <div id="text-header">
-            <h1>Noémie Martin</h1>
-            <h2>Développeuse fullstack</h2>
-        </div>
-        <div>
-            <img src="./img/noemie_martin.png" alt="Photo de Noémie Martin" />
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <div><a class="navbar-brand mobile d-lg-none textBm" href="index.html">B<span id="lepoint">.</span>M</a>
+                </div>
+                <div><a class="navbar-brand desktop d-none d-lg-block" href="#">Beressa Mohammed</a></div>
+
+
+
+                <button class="navbar-toggler navbar-light " type="button " data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-light"></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#a_propos">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiences">Expériences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#travaux_récents">Travaux</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <div class="parallax text-center">
+            <div class="intro text-center">
+                <img class="intropic" src="./img/Moi (2).png" alt="">
+                <div class="txt">
+                    <h1>Mohammed Beressa</h1>
+                    <p>Je suis un <span id="typed"></span>
+                </div>
+                <div>
+                    <ul class="social-icons list-inline my-4 text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/edmondwilmore"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-figma"></i></a></li>
+                    </ul>
+                </div>
+                <div class="container ">
+                    <div>
+                        <a href="#contact" class="btn btn-rose btn-default">Embauchez-moi !</a>
+                    </div>
+                    <div id="scrolldown">
+                        <a href="#experiences" class="sectionSouris" style="text-decoration: none;"> <span
+                                class="textSouris">Défiler vers le
+                                bas</span>
+                            <span class="souris"> <span class="wheel"></span></span></a>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <div class="block-couleur">
-        <section id="presentation" class="primary-block">
-            <h3>Présentation</h3>
-            <div>
-                <ul>
-                    <li>Passionée de nouvelles technologies</li>
-                    <li>Autonome, rigoureuse</li>
-                    <li>Une bonne journée ne se passe pas sans un bon livre</li>
-                </ul>
-            </div>
-        </section> <!-- fin de ma présentation-->
-    </div>
-    <section id="experience">
-        <h3>Expériences Professionnelles</h3>
-        <div>
-            <div id="experience-space">
-                <div class="experience-title">
-                    <span class="text-experience">Stagiare en développement chez TechLabs</span>
-                    <span>2018</span>
+    <section class="a_propos">
+        <div class="container">
+            <h2 class="titre_section">À propos de moi</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="text-center photopro2 mb-3">
+                        <img src="./img/Moipropos.png" alt="">
+                    </div>
                 </div>
-                <ul class="liste-sans-points">
-                    <li>Création du site web</li>
-                    <li>Créations des tests unitaires pour l'application interne</li>
-                </ul>
-            </div>
-            <div>
-                <div class="experience-title">
-                    <span class="text-experience">Bénévole Konexio</span>
-                    <span>2016-2018</span>
+                <div class="col-md-9 rounded">
+                    <div class="rounded bg-white shadow-dark padding-30">
+                        <div class="row">
+                            <div class="col-md-6 bg-white">
+                                <!-- Text à propos-->
+                                <p>Je suis Mohammed, web developer de Paris, je suis diplômé d’un M2 en Histoire et
+                                    civilisations comparées.
+                                    Je possède une riche expérience dans la conception et la réalisation de sites web et
+                                    de personnalisation, je suis également bon avec WordPress.
+                                    La polyvalence et la richesse de mon parcours font de mon profil un atout.
+                                </p>
+                                <div class="btncv">
+                                    <a href="./doc/opensource.md" target="_blank" download="Mon CV" class="btn btn-rose btn-default">Télécharger mon CV</a>
+                                </div>
+                                <div class="espace d-md-none d-lg-none">
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 bg-white">
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix mb-3">
+                                        <h4 class="float-left">Développement</h4> <span class="float-right">85%</span>
+                                    </div>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-dev" role="progressbar" style="width: 95%"
+                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item skill-2 mt-1">
+                                    <div class="skill-info clearfix mb-3">
+                                        <h4 class="float-left">WordPress</h4> <span class="float-right">100%</span>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-wordpress" role="progressbar"
+                                                style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mt-1">
+                                    <div class="skill-info clearfix mb-3">
+                                        <h4 class="float-left">UI/UX design</h4> <span class="float-right">80%</span>
+                                    </div>
+                                    <div class="progressbar mb-3">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-design" role="progressbar" style="width: 80%"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul class="liste-sans-points">
-                    <li>Création de Site Web</li>
-                    <li>Management de Projet</li>
-                </ul>
             </div>
         </div>
-    </section> <!-- fin section expérience-->
-    <div class="block-couleur">
-        <section id="formations" class="primary-block">
-            <h3>Formations</h3>
-            <ul class="liste-sans-points">
-                <li class="experience-title">
-                    <span class="text-experience">License en médecine à Paris XXI</span>
-                    <span>2015-2018</span>
-                </li>
-                <li class="experience-title">
-                    <span class="text-experience">Bac</span>
-                    <span>2018</span>
-                </li>
-            </ul>
-        </section>
-        <!--fin section formations-->
-    </div>
-    <section id="passions">
-        <h3>Passions</h3>
-        <p>Saut en parachute, voyage, Bali</p>
-    </section> <!-- finde ma section passion-->
-    <footer class="primary-block">
-        <div id="footer">
-            <div id="footer-links">
-                <ul class="liste-sans-points">
-                    <li> <a href="http://konexio.eu">Mon Blog Tech</a></li>
-                    <li><a href="http://konexio.eu" target="_blank">Mon blog voyage</a></li>
-                </ul>
+    </section>
+
+    <section id="compé">
+        <div class="container">
+            <div class="row text-center mt-5">
+                <div class="col-md-4 col-6"> <img src="./img/exemple/css.svg" alt=""> </div>
+                <div class="col-md-4 col-6"> <img src="./img/exemple/html5.svg" alt=""> </div>
+                <div class="col-md-4 "> <img src="./img/exemple/wordpress.svg" alt=""> </div>
             </div>
-            <div id="reseau">
-                <ul class="liste-sans-points">
-                    <li><a href="http://konexio.eu" target="_blank"> <i class="fab fa-linkedin"></i>linkedin </a></li>
-                    <li><a href="http://konexio.eu" target="_blank"> <i class="fab fa-twitter-square"></i>Twitter</a></li>
-                </ul>
+
+
+
+
+        </div>
+
+    </section>
+
+    <section id="experiences">
+        <div class="container">
+            <h2 class="titre_section"> <a href=""></a>Experiences</h2>
+            <div class="row">
+                <div class="col-md-6 ">
+
+                    <div class="edu rounded bg-white shadow-dark padding-30">
+                        <div class="col-1 float-left">
+                            <i class="fas fa-graduation-cap float-left"></i>
+                        </div>
+                        <div class="content">
+
+
+                            <span class="time mp-1 "> 2020 - Présent</span>
+                            <h4 class="titre">Konexio</h4>
+                            <p class="textExperience"> Programme Digitous un parcours intensif visant à former des
+                                développeurs full stack. </p>
+                        </div>
+                        <div class="col-1 float-left">
+                            <i class="fas fa-graduation-cap float-left"></i>
+                        </div>
+                        <div class="content">
+
+                            <span class="time">2014 - 2016</span>
+                            <h4 class="titre">Recherche</h4>
+                            <p class="textExperience"><span class="boldText">Sujet:</span> La révolution fabrique de la
+                                démocratie</p>
+
+                        </div>
+                        <div class="col-1 float-left">
+                            <i class="fas fa-graduation-cap float-left"></i>
+                        </div>
+                        <div class="content">
+                            <span class="time">2010 - 2013</span>
+                            <h4 class="titre">Master 2 Histoires</h4>
+                            <p class="textExperience">M2 Histoire et Civilisations comparées.</p>
+
+                        </div>
+                        <div class="col-1 float-left">
+                            <i class="fas fa-graduation-cap float-left"></i>
+                        </div>
+                        <div class="content">
+                            <span class="time">2007 - 2010</span>
+                            <h4 class="titre">Licence d'Histoire.</h4>
+                            <p class="textExperience"> Acquisition d’une culture historique approfondie et d’un ensemble
+                                de compétences en
+                                matière d’analyse, de réflexion et de sens critique, applicables aux sociétés du passé
+                                comme au monde contemporain.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+                <div class="col-md-6 ">
+                    <div class="timeline edu bg-white rounded shadow-dark padding-30">
+                        <div class="col-1 float-left">
+                            <i class="fas fa-briefcase float-left"></i>
+                        </div>
+
+                        <div class="content">
+                            <span class="time">2016 - Présent</span>
+                            <h4 class="titre">Webmaster/ Content Manager</h4>
+                            <p class="textExperience">En collaboration avec les clients, j’ai travaillé à
+                                l’élaboration
+                                de l’identité visuelle des sites.
+                                De plus par la conception de boutique j'ai pu chapeauter la stratégie
+                                marketing. Rédactions de plus de 900 articles. Numecoin.fr/ Lightme.fr/
+                                Francoisvigorie.com</p>
+                        </div>
+                        <div class="col-1 float-left">
+                            <i class="fas fa-briefcase float-left"></i>
+                        </div>
+
+                        <div class="content">
+                            <span class="time">Mairie de Paris | Mai - Juin 2016</span>
+                            <h4 class="titre">Chargé de projet</h4>
+                            <p class="textExperience"> <span class="boldText"> Mission:</span> gestion des actions sur
+                                le territoire. Mon poste étant centralisateur, je
+                                fus force de proposition dans l'amélioration dans l’organisation de l'EDL, mon rôle
+                                auprès des différents acteurs étant un atout.</p>
+                        </div>
+                        <div class="col-1 float-left">
+                            <i class="fas fa-briefcase float-left"></i>
+                        </div>
+                        <div class="content">
+                            <span class="time">Ministère de la Ville | Nov 2015 - Février 2016</span>
+                            <h4 class="titre">Chargé de projet</h4>
+                            <p class="textExperience"> <span class="boldText">Mission:</span> mandaté par la ville de
+                                Paris en tant que responsable de territoire, mise en place du Conseil Citoyen et du
+                                budget Participatif</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p>Besoin de me contacter ? <a href="#contact" class="textContact1">Cliquez ici !</a> </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Ici ma sections travaux récents avec mes cartes représentant mes travaux-->
+    <section id="travaux_récents">
+        <div class="container">
+            <div class="gallery col-lg-12 mx-auto">
+                <h2 class="titre_section">Travaux récents</h2>
+            </div>
+            <div>
+                <button class="btn btn-default filter-button" data-filter="all">Tous</button>
+                <button class="btn btn-default filter-button" data-filter="sites">Sites</button>
+                <button class="btn btn-default filter-button" data-filter="wordpress">Wordpress</button>
+                <button class="btn btn-default filter-button" data-filter="applications">Applications</button>
+            </div>
+            <div class="row">
+
+                <div class="gallery_product col-md-4 filter center wordpress">
+                    <div class="card wordpress gallery_product filter center embed-responsive-16by9">
+                        <img class="card-img-top" src="./img/Sites/Wordpress/numecoin.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Numecoin</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_product col-md-4 filter center wordpress">
+                    <div class="card wordpress gallery_product filter center embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-16by9"
+                            src="./img/Sites/Wordpress/intechparis.fr_.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Intech Paris</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_product col-md-4 filter center wordpress">
+                    <div class="card wordpress gallery_product filter center embed-responsive-16by9">
+                        <img class="card-img-top" src="./img/Sites/Wordpress/francoisvigorie.com_.png">
+                        <div class="card-body">
+                            <h5 class="card-title">François Vigorie</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_product col-md-4 filter center sites">
+                    <div class="card sites gallery_product filter center">
+                        <img class="card-img-top" src="./img/exemple/building.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Sites</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_product col-md-4 filter center sites">
+                    <div class="card sites gallery_product filter center">
+                        <img class="card-img-top" src="./img/exemple/building.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Sites</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_product col-md-4 filter center">
+                    <div class="card applications gallery_product filter center">
+                        <img class="card-img-top" src="./img/exemple/people.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Applications</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_product col-md-4 filter center applications">
+                    <div class="card applications gallery_product filter center">
+                        <img class="card-img-top" src="./img/exemple/cars.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                En Savoir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
-    </footer>
+
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="titre_section"> <a href=""></a>Contactez Moi</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Vous n'aimez pas les formulaires ? Envoyez-moi un <a href="mailto:el.beress@gmail.com"
+                            class="textContact1">e-mail.</a></p>
+                </div>
+
+                <div class="container col-md-9">
+                    <form action="https://formspree.io/f/xrgooqky" method="post">
+
+                        <div class="form row">
+                            <div class="col-md-6 col-mb-3">
+                                <label for="name">Votre nom</label>
+                                <input type="text" class="form-control name my-2" name="name" placeholder="Nom">
+                            </div>
+                            <div class="form-group col-md-6 mb-3">
+                                <label for="exampleFormControlInput1">Adresse E-mail</label>
+                                <input type="email" class="form-control email my-2" name="email"
+                                    id="exampleFormControlInput1" placeholder="duchesse@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control message" id="textArea" name="message" placeholder="Messages"
+                                rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-rose my-4 submit">Envoyez</button>
+                    </form>
+                    <div class="container">
+                        <div class="status"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- Ma zone script js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--Script typed.js-->
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['historien', 'UI/UX designer junior', 'développeur web front-end junior', 'développeur full-stack junior'],
+            loop: true,
+            typeSpeed: 100,
+            smartBackspace: true // Default value,
+        });
+    </script>
+    <!-- Script portfolio-->
+    <script>
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                }
+                else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
+        });
+    </script>
+    <div class="container icontop">
+        <button id="btnScrollTop">
+            <i class="material-icons">arrow_upward</i>
+        </button>
+    </div>
+    <script>
+        const btnScrollTop = document.querySelector("#btnScrollTop");
+
+
+        btnScrollTop.addEventListener("click", function () {
+            // window.scrollTo(0,0);
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
