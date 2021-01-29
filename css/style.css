@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
 
 @font-face {
-    font-family: 'Simple';
+    font-family: src='Simple';
 }
 
 /*=================================================================*/
@@ -68,9 +68,6 @@ img {
     box-shadow: 0 0 10px rgba(255, 76, 96, 0.8);
 }
 
-/*.btn-primary{
-    background-color: #f6b092;
-    border-color: #f6b092;}*/
 
 #lepoint {
     color: #ff4c60;
@@ -185,7 +182,7 @@ img {
 }
 
 .bg-dev {
-    background: #6c6ce5;
+    background: #353353;
 }
 
 .titre_section {
@@ -206,7 +203,6 @@ img {
 .edu {
     padding-right: 15px;
     padding-left: 15px;
-    margin
 }
 
 .content {
@@ -298,13 +294,13 @@ img {
     border: none;
 }
 #btnScrollTop:active{
-    background-color: #4b4bb3;
+    background-color: #353353;
 }
 .material-icons{
     background-color: #6c6ce5;
 }
 .material-icons:active{
-    background-color: #4b4bb3;
+    background-color: #353353;
 
 }
 
